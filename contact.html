@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – PAWJ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo-link">
+        <img src="assets/logo.jpeg" alt="PAWJ logo" width="48" height="48">
+        <span>PAWJ</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="news.html">News &amp; Events</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="memorandum.html">Memorandum</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p class="subtitle">Get in touch with PAWJ for inquiries, membership, or support.</p>
+      </div>
+    </section>
+
+    <div class="page-content">
+      <div class="container">
+        <section>
+          <h2>Primary Contact</h2>
+          <div class="contact-block">
+            <p><strong>Email:</strong> <a href="mailto:info@pawj.org">[info@pawj.org or actual email]</a></p>
+            <p><strong>Phone:</strong> [+91-XXXXXXXXXX]</p>
+            <p><strong>Address:</strong> [Full mailing address if available]</p>
+          </div>
+        </section>
+
+        <section>
+          <h2>Department Contacts</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Department / Role</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>General Inquiries</td>
+                  <td>[Name]</td>
+                  <td><a href="mailto:email@domain.com">[email]</a></td>
+                  <td>[phone]</td>
+                </tr>
+                <tr>
+                  <td>Membership</td>
+                  <td>[Name]</td>
+                  <td><a href="mailto:email@domain.com">[email]</a></td>
+                  <td>[phone]</td>
+                </tr>
+                <tr>
+                  <td>Legal Support</td>
+                  <td>[Name]</td>
+                  <td><a href="mailto:email@domain.com">[email]</a></td>
+                  <td>[phone]</td>
+                </tr>
+                <tr>
+                  <td>Events / Workshops</td>
+                  <td>[Name]</td>
+                  <td><a href="mailto:email@domain.com">[email]</a></td>
+                  <td>[phone]</td>
+                </tr>
+                <tr>
+                  <td>Media / Press</td>
+                  <td>[Name]</td>
+                  <td><a href="mailto:email@domain.com">[email]</a></td>
+                  <td>[phone]</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section>
+          <h2>Social Media</h2>
+          <div class="social-links">
+            <a href="https://facebook.com/..." target="_blank" rel="noopener">Facebook</a>
+            <a href="https://twitter.com/..." target="_blank" rel="noopener">Twitter/X</a>
+            <a href="https://instagram.com/..." target="_blank" rel="noopener">Instagram</a>
+            <a href="https://wa.me/..." target="_blank" rel="noopener">WhatsApp</a>
+            <a href="https://youtube.com/..." target="_blank" rel="noopener">YouTube</a>
+          </div>
+        </section>
+
+        <section>
+          <h2>Office Hours</h2>
+          <div class="contact-block">
+            <p><strong>Monday – Friday:</strong> [HH:MM AM – HH:MM PM]</p>
+            <p><strong>Saturday:</strong> [HH:MM AM – HH:MM PM or Closed]</p>
+            <p><strong>Sunday:</strong> [HH:MM AM – HH:MM PM or Closed]</p>
+            <p><strong>Holidays:</strong> [List if office is closed on specific holidays]</p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <p class="copyright">© Parent Association for Welfare &amp; Justice. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.querySelector('.nav-toggle');
+      var nav = document.querySelector('.main-nav');
+      if (toggle && nav) {
+        toggle.addEventListener('click', function () {
+          nav.classList.toggle('open');
+          toggle.setAttribute('aria-expanded', nav.classList.contains('open'));
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

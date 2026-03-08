@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAWJ – Parent Association for Welfare &amp; Justice</title>
+  <meta name="description" content="Parent Association for Welfare & Justice – Ensuring welfare through justice for families and children.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo-link">
+        <img src="assets/logo.jpeg" alt="PAWJ logo" width="48" height="48">
+        <span>PAWJ</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="news.html">News &amp; Events</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="memorandum.html">Memorandum</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Parent Association for Welfare &amp; Justice</h1>
+        <p class="subtitle">Ensuring welfare through justice – standing with parents and families for fair representation and support.</p>
+      </div>
+    </section>
+
+    <section class="page-content">
+      <div class="container">
+        <h2>Latest Updates</h2>
+        <div class="card-grid">
+          <article class="card">
+            <span class="date">DD Month YYYY</span>
+            <h3>Event or announcement title</h3>
+            <p>Replace with 2–3 sentences about what happened or what’s coming. This is placeholder content from the template.</p>
+          </article>
+          <article class="card">
+            <span class="date">DD Month YYYY</span>
+            <h3>Second news item</h3>
+            <p>Details for the second news item. Update with actual announcements or events.</p>
+          </article>
+          <article class="card">
+            <span class="date">DD Month YYYY</span>
+            <h3>Third news item</h3>
+            <p>Details for the third news item. Keep cards concise and link to the News page for more.</p>
+          </article>
+        </div>
+
+        <section class="cta-section" style="margin-top: 3rem;">
+          <div class="container">
+            <h2>Get Involved</h2>
+            <p>Join PAWJ to have a voice in school and community decisions, access legal resources, and connect with other parents. Your participation strengthens our collective impact.</p>
+            <div class="cta-buttons">
+              <a href="membership.html" class="btn btn-primary">Join as a Member</a>
+              <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <p class="copyright">© Parent Association for Welfare &amp; Justice. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.querySelector('.nav-toggle');
+      var nav = document.querySelector('.main-nav');
+      if (toggle && nav) {
+        toggle.addEventListener('click', function () {
+          nav.classList.toggle('open');
+          toggle.setAttribute('aria-expanded', nav.classList.contains('open'));
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

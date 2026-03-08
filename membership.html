@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membership – PAWJ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo-link">
+        <img src="assets/logo.jpeg" alt="PAWJ logo" width="48" height="48">
+        <span>PAWJ</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="membership.html" class="active">Membership</a></li>
+          <li><a href="news.html">News &amp; Events</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="memorandum.html">Memorandum</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Join PAWJ</h1>
+        <p class="subtitle">Become a member and strengthen our collective voice.</p>
+      </div>
+    </section>
+
+    <div class="page-content">
+      <div class="container">
+        <section>
+          <h2>Why Join?</h2>
+          <p class="lead">[Why should parents join PAWJ? What problem does it solve? Suggested length: 100–150 words.]</p>
+        </section>
+
+        <section>
+          <h2>Member Benefits</h2>
+          <ul class="benefits-list">
+            <li>Representation in school meetings</li>
+            <li>Access to legal resources</li>
+            <li>Priority workshop invitations</li>
+            <li>Regular newsletters</li>
+            <li>[Add more as needed]</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>How to Join</h2>
+          <h3>Membership application process</h3>
+          <ol class="steps-list">
+            <li data-step="1">Step 1: [Description]</li>
+            <li data-step="2">Step 2: [Description]</li>
+            <li data-step="3">Step 3: [Description]</li>
+          </ol>
+          <p><strong>Required documents:</strong> [List what members need to provide.]</p>
+          <p><strong>Membership fee:</strong> [Is there a fee? If so, how much?]</p>
+          <p><strong>Contact for membership:</strong> [Name and email of membership coordinator.]</p>
+          <a href="contact.html" class="btn btn-primary">Contact Membership Coordinator</a>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <p class="copyright">© Parent Association for Welfare &amp; Justice. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.querySelector('.nav-toggle');
+      var nav = document.querySelector('.main-nav');
+      if (toggle && nav) {
+        toggle.addEventListener('click', function () {
+          nav.classList.toggle('open');
+          toggle.setAttribute('aria-expanded', nav.classList.contains('open'));
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

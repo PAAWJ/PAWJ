@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memorandum – PAWJ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo-link">
+        <img src="assets/logo.jpeg" alt="PAWJ logo" width="48" height="48">
+        <span>PAWJ</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="news.html">News &amp; Events</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="memorandum.html" class="active">Memorandum</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Memorandum</h1>
+        <p class="subtitle">Official memorandum of the Parent Association for Welfare &amp; Justice.</p>
+      </div>
+    </section>
+
+    <div class="page-content">
+      <div class="container">
+        <section>
+          <h2>Document Details</h2>
+          <p><strong>Document title:</strong> [Official name of the memorandum]</p>
+          <p><strong>Status:</strong> [Finalized / In Progress / Pending Approval]</p>
+          <p><strong>Last updated:</strong> [DD Month YYYY]</p>
+        </section>
+
+        <section>
+          <h2>Key Sections Covered</h2>
+          <ul class="benefits-list">
+            <li>Objectives and scope of the association</li>
+            <li>Rules for membership, meetings, and voting</li>
+            <li>Code of conduct and grievance procedures</li>
+            <li>Financial management and fundraising policy</li>
+            <li>Other sections: [List any additional sections]</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Document Access</h2>
+          <p><strong>File name:</strong> [e.g. PAWJ_Memorandum_2026.pdf]</p>
+          <p><strong>Download status:</strong> [Available / Coming Soon]</p>
+          <p><strong>Contact for document requests:</strong> [Name and email]</p>
+          <a href="assets/PAWJ_Memorandum_2026.pdf" class="btn btn-primary">Download Memorandum (when available)</a>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <p class="copyright">© Parent Association for Welfare &amp; Justice. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.querySelector('.nav-toggle');
+      var nav = document.querySelector('.main-nav');
+      if (toggle && nav) {
+        toggle.addEventListener('click', function () {
+          nav.classList.toggle('open');
+          toggle.setAttribute('aria-expanded', nav.classList.contains('open'));
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
