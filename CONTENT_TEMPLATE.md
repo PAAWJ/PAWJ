@@ -279,7 +279,7 @@ Please provide for each department/role:
 - **Registration Number** (if applicable): [Reg no.]
 
 ## Logo Information
-- **Logo File**: `assets/logo.jpeg`
+- **Logo File**: `assets/logo.png`
 - **Logo File Size**: [Actual size of the uploaded image]
 - **Logo Variants Needed**:
   - [ ] Small logo for mobile (request when needed)
